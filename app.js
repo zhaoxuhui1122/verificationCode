@@ -7,7 +7,9 @@ const port = process.env.PORT || 3000;
 //为了获取req.body里的数据
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({extended: true}));
-
+//增加了跨域请求
+const jsonp = require("./config/jsonp");
+app.all("*",jsonp);
 //service
 const phone = require("./service/phone");
 //定义请求借口

@@ -1,4 +1,4 @@
-const Alidayu = require('../config/alidayu');
+cconst Alidayu = require('../config/alidayu');
 const randomCode = require("./config/randomCode");
 const config = {
 	app_key: 'your app key', //自己申请的appkey
