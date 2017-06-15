@@ -70,9 +70,9 @@ app.listen(port, function() {
 ## 关于如何申请阿里大于短信服务接口
 ##### 1.登录[https://www.alidayu.com](https://www.alidayu.com)注册账号，首页-->产品-->验证码；
 ##### 2.创建应用，管理中心-->应用管理-->应用列表-->创建应用；
-![](./verificationCode/static/img/01.jpg)
+![](./static/img/01.jpg)
 ##### 3.配置短信签名，管理中心-->配置管理-->验证码-->配置短信签名-->创建签名,根据要求填写信息,约十分钟左右将会审核完毕;
-![](./verificationCode/static/img/01.jpg)
+![](./static/img/02.jpg)
 ##### 4.配置短信模板，管理中心-->配置管理-->验证码-->配置短信模板-->创建模板，提交审核；
 
 ```
@@ -80,7 +80,7 @@ app.listen(port, function() {
 
 ${code}和${text}是变量绑定方式，内容为service/phone.js下的options.sms_param的对应内容
 ```
-![](./verificationCode/static/img/01.jpg)
+![](./static/img/03.jpg)
 ##### 5.将所需的参数配置进service/phone.js的对应项目中
 
 ## 运行启动服务

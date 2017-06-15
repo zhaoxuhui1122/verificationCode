@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="static/js/jquery.min.js"></script>
+		<style type="text/css">
+			* {
+				box-sizing: border-box;
+			}
+			
+			h1 {
+				text-align: center;
+			}
+			
+			div {
+				width: 800px;
+				margin: 30px auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			
+			input {
+				flex: 1;
+				margin: 0 20px;
+				line-height: 32px;
+				padding: 3px 20px;
+			}
+			
+			button {
+				display: block;
+				padding: 6px 20px;
+				height: 40px;
+				background: lightseagreen;
+				border: 0;
+				outline: medium;
+				border-radius: 4px;
+				font-size: 18px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>发送验证码示例</h1>
+		<hr />
+		<div>
+			<input type="text" placeholder="输入手机号" id="phone" />
+			<button class="btn">发送信息</button>
+		</div>
+	</body>
+
+</html>
+<script>
+	$(function() {
+		$(".btn").click(function() {
+			var phone = $("#phone").val();
+			var reg = /^(1){1}(3|5|7|8){1}[0-9]{9}/;
+			if(reg.test(phone)) {
+				$.ajax({
+					type: "post",
+					url: "http://localhost:3000/phone",
+					async: true,
+					data: {
+						phone: phone
+					},
+					success: function(res) {
+						if(res == "success") {
+							alert("发送成功！");
+						} else {
+							alert("发送失败");
+						}
+
+					}
+				});
+			} else {
+				alert("手机号输入有误！")
+			}
+
+		})
+	})
+</script>

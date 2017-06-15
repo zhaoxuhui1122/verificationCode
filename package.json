@@ -1,0 +1,17 @@
+{
+  "name": "verification-code",
+  "version": "1.0.0",
+  "description": "send phone message",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhaoxuhui 15638862289@163.com",
+  "license": "ISC",
+  "devDependencies": {
+    "blueimp-md5": "^2.7.0",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  }
+}
