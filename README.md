@@ -82,7 +82,8 @@ ${code}和${text}是变量绑定方式，内容为service/phone.js下的options.
 ```
 ![](./static/img/03.jpg)
 ##### 5.将所需的参数配置进service/phone.js的对应项目中
-
+具体的配置可参考官方的测试接口，将生成的代码拷贝即可
+![](./static/img/04.jpg)
 ## 运行启动服务
 ```
  node app.js
