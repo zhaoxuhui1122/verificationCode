@@ -90,7 +90,7 @@ ${code}和${text}是变量绑定方式，内容为service/phone.js下的options.
 ```
 打开localhost:3000/index.html测试效果
 
-
+![](./static/img/05.jpeg)
 
 
 
