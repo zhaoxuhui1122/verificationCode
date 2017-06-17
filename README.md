@@ -3,7 +3,7 @@ nodejs实现手机验证码发送功能,借助阿里大于短信发送平台，�
 
 ## 下载项目
 ```
-git clone 
+git clone https://github.com/zhaoxuhui1122/verificationCode.git
 ```
 ## 初始化
 ```
